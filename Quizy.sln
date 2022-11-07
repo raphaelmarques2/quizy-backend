@@ -13,6 +13,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quizy.Shared", "Quizy.Share
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quizy.User.API", "Quizy.User.API\Quizy.User.API.csproj", "{6FF65BC5-7574-4D65-AB5E-A168B0A60068}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{486FFF7B-EA50-4BF3-BEDE-9F1C9B7D3A38}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "User", "User", "{418AD879-17E6-4D0D-991D-282096A33B5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tag", "Tag", "{94E667DF-112B-432D-B006-334A45AE6A3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quizy.Tag.Domain", "Quizy.Tag.Domain\Quizy.Tag.Domain.csproj", "{AE30B531-DD31-4E78-95FF-3CB3B7202BE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quizy.Tag.Tests", "Quizy.Tag.Tests\Quizy.Tag.Tests.csproj", "{9B8ECCCC-7E39-4361-95F6-F616A6743777}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,9 +52,24 @@ Global
 		{6FF65BC5-7574-4D65-AB5E-A168B0A60068}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FF65BC5-7574-4D65-AB5E-A168B0A60068}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FF65BC5-7574-4D65-AB5E-A168B0A60068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE30B531-DD31-4E78-95FF-3CB3B7202BE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE30B531-DD31-4E78-95FF-3CB3B7202BE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE30B531-DD31-4E78-95FF-3CB3B7202BE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE30B531-DD31-4E78-95FF-3CB3B7202BE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B8ECCCC-7E39-4361-95F6-F616A6743777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8ECCCC-7E39-4361-95F6-F616A6743777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8ECCCC-7E39-4361-95F6-F616A6743777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8ECCCC-7E39-4361-95F6-F616A6743777}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B2F9ED33-B1D9-419E-920D-744E060C2BD9} = {418AD879-17E6-4D0D-991D-282096A33B5B}
+		{A062C821-1771-44C3-A2A9-9088FB11B51E} = {418AD879-17E6-4D0D-991D-282096A33B5B}
+		{6FF65BC5-7574-4D65-AB5E-A168B0A60068} = {418AD879-17E6-4D0D-991D-282096A33B5B}
+		{AE30B531-DD31-4E78-95FF-3CB3B7202BE0} = {94E667DF-112B-432D-B006-334A45AE6A3E}
+		{9B8ECCCC-7E39-4361-95F6-F616A6743777} = {94E667DF-112B-432D-B006-334A45AE6A3E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {78513DCD-0315-4F70-908C-C0C955662F05}

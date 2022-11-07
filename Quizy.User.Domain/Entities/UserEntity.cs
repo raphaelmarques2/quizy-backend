@@ -1,15 +1,12 @@
 ﻿using Quizy.Shared.DDD;
+using Quizy.Shared.Entities;
 
 namespace Quizy.User.Domain.Entities
 {
-    public class UserEntity
+    public class UserEntity : BaseEntity
     {
-        public Id Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
-
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
 
         public UserEntity(
             Id id,
@@ -17,13 +14,10 @@ namespace Quizy.User.Domain.Entities
             string email,
             DateTime? createdAt = null,
             DateTime? updatedAt = null
-            )
+            ) : base(id, createdAt, updatedAt)
         {
-            Id = id;
             Name = name;
             Email = email;
-            CreatedAt = createdAt ?? DateTime.UtcNow;
-            UpdatedAt = createdAt ?? DateTime.UtcNow;
         }
 
     }

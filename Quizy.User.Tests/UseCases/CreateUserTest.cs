@@ -30,7 +30,7 @@ namespace Quizy.User.Tests.UseCases
             Assert.Equal("John", userDto.Name);
             Assert.Equal("john@abc.com", userDto.Email);
 
-            Assert.Single(repository.users);
+            Assert.Single(repository.Users);
 
             Assert.True(repository.SaveChangesCalled);
         }
@@ -38,7 +38,7 @@ namespace Quizy.User.Tests.UseCases
         [Fact]
         public async void CreateUser_WithExistingEmail_ShuouldThrowsException_AndNotSaveIt()
         {
-            repository.users.Add(
+            repository.Users.Add(
                 new UserEntity(
                     id: new Id(),
                     name: "John",
@@ -47,7 +47,7 @@ namespace Quizy.User.Tests.UseCases
 
             await Assert.ThrowsAsync<EmailAlreadyExistsException>(async () => await createUser.ExecuteAsync("John", "john@abc.com"));
 
-            Assert.Single(repository.users);
+            Assert.Single(repository.Users);
         }
 
     }

@@ -17,13 +17,13 @@ namespace Quizy.User.Tests.UseCases
             repository = new MemoryUserRepository();
             getUser = new GetUserByEmailUseCase(repository);
 
-            repository.users.Add(
+            repository.Users.Add(
                 new UserEntity(
                     id: new Id("1"),
                     name: "A",
                     email: "a@abc.com"
                 ));
-            repository.users.Add(
+            repository.Users.Add(
                 new UserEntity(
                     id: new Id("2"),
                     name: "B",
